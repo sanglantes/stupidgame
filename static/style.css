@@ -1,0 +1,147 @@
+@font-face {
+	font-family: "Old English";
+	src: local("OldEnglishFive"),
+	url("fonts/OldEnglishFive.ttf");
+}
+
+@font-face {
+	font-family: "Vogue";
+	src: local("Vogue"),
+	url("fonts/Vogue.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, #f1f1f1, white);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.top-text {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+}
+
+
+h1, h2 {
+	font-family: "Vogue";
+	color: black;
+	font-size: 3.5em;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 25vw;
+    height: 70vh;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 10;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chat-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chat-content p {
+    word-wrap: break-word;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.username-change {
+    margin-top: 10px;
+}
+
+.name-change {
+    font-style: italic;
+    color: #888;
+}
+
+.hidden {
+    display: none;
+}
+
+#unhide-box-button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 11;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    bottom: 1px;
+}
+
+.input-container textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+
+textarea {
+  resize: none;
+}
+
+#message {
+	padding-bottom: 2em;
+	margin-bottom: 0.5vh;
+}
+
+.video-container{
+  width: 25vw;
+  height:25vh;
+  overflow:hidden;
+  position:relative;
+}
+
+
+.video-container iframe,{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container iframe, {
+  pointer-events: none;
+}
+.video-container iframe{
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 120px);
+}
+.video-foreground{
+  pointer-events:none;
+}

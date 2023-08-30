@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Black Bet</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+	<div class="top-text">
+		<h1>SOME GAME ONLINE</h1>
+	</div>
+	<div class="game-container">
+        <div class="video-container">
+            <div class="video-foreground">
+            </div>             
+        </div>  
+            <img height="50" width="50" src="media/person.svg">
+        <div class="answer-container">            
+        </div>
+	</div>
+
+    <div class="chat-box">
+        <div class="username-change">
+            <hr>
+            <input type="text" id="new-username" placeholder="New username">
+            <button id="change-username-button">Change username</button>
+            <button id="hide-box-button">Hide chat</button>
+        </div>
+        <div class="chat-content">
+        </div>
+
+		<div class="input-container">
+		    <textarea id="message" placeholder="Type your message..."></textarea>
+		    <input type="button" value="Send" name="send-button" id="send-button">
+		    <hr>
+		</div>
+    </div>
+    <button id="unhide-box-button" class="hidden">Unhide chat</button>
+	</main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
